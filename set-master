@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+
+import getpass
+
+from utils import write_pass
+
+password = getpass.getpass()
+write_pass(password)
+
+

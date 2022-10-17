@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+
+import getpass
+import utils
+password = getpass.getpass()
+
+utils.check_password(password)
+
+
+
+
