@@ -22,7 +22,7 @@ password_file = HERE / (args.name + ".pass")
 if password_file.exists():
     raise Exception(f"{password_file} already exists")
 
-new_password = xkcd_password.generate_xkcdpassword(xkcd_password.generate_wordlist(), delimiter=".", numwords=5)
+new_password = xkcd_password.generate_xkcdpassword(xkcd_password.generate_wordlist(), delimiter=".", numwords=5) + '.1A!'
 cipher = utils.encrypt(master, new_password)
 
 with (password_file).open("w") as f:

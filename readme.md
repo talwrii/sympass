@@ -2,6 +2,8 @@
 
 This is a very feature-incomplete reimplementation of the [pass](https://www.passwordstore.org) utility with one difference: passwords are encrypted in a symmetric fashion using a master password.
 
+This also happens to use xkcd multiple word passwords
+
 ## Motivation
 
 I experienced problems with corrupted files using the graphical tool [keepass](https://www.keepassx.org/) - albeit after using a python library to try to access it.  I also prefer command-line utilities. I also have had machines break and wanted to quickly get at passwords.
